@@ -1,10 +1,5 @@
 import React, {Component} from "react"
-import {
-  storeProducte,
-  detailProducte,
-  storeProduct,
-  detailProduct,
-} from "./data"
+import { storeProduct, detailProduct} from "./data"
 
 const ProductContext = React.createContext()
 
@@ -26,9 +21,8 @@ class ProductProvider extends Component {
         value={{
           ...this.state,
           handleDetail: this.handleDetail,
-          addToCart: this.addToCart,
-        }}
-      >
+          addToCart: this.addToCart
+        }}>
         {this.props.children}
       </ProductContext.Provider>
     )

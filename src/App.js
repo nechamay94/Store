@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Navbar />
+        <Navbar/>
         <Switch>
           <Route path="/" exact component={ProductList} />
           <Route path="/details" component={Details} />
